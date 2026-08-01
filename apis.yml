@@ -1,8 +1,26 @@
 aid: republic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/republic.png
 name: Republic
-description: 'Republic is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Republic is a New York-based fintech and private investing platform (republic.com)
+  that lets retail and accredited investors access early-stage startups, private companies,
+  real estate, crypto, and other alternative assets through regulated investment crowdfunding
+  offerings. Backed by prosus-ventures, Republic operates a consumer investing marketplace
+  rather than a public developer platform: it publishes a security and compliance posture
+  (SOC 2, ISO 27001) at republic.com/security but exposes no public API, developer portal,
+  SDKs, or documentation surface at the time of this enrichment pass. This profile was
+  surfaced as a portfolio-company lead and enriched with the provider-security signals
+  that could be probed directly.'
 url: https://raw.githubusercontent.com/api-evangelist/republic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Investing
+- Crowdfunding
+- Private Markets
+- Startups
+- Crypto
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/republic-trust-center.yml
+- type: DomainSecurity
+  url: security/republic-domain-security.yml
+- type: Compliance
+  url: https://republic.com/security
 - type: Website
   url: https://republic.com
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
