@@ -41,7 +41,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 tags:
 - Company
 - Fintech
@@ -57,6 +57,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://republic.com/insights
+  type: Blog
+- url: https://republic.com/insights.atom
+  type: BlogRSS
 - type: TrustCenter
   url: security/republic-trust-center.yml
 - type: DomainSecurity
